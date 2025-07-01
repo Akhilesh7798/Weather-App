@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #0007ff, #2d32f7, #4549ed, #595be1, #6a6cd4);
+}
+
+.card {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    width: 90%;
+    max-width: 470px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 80px auto 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+    padding: 20px 15px;
+    color: #fff;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.search input {
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin: 30px 0px 0px 10px;
+    color: #000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #637074;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 30px 10px 0px 0px;
+    font-size: 18px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search button:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.search input:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.weather {
+    margin-top: 20px;
+}
+
+.temp {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.city {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 35px;
+    height: 35px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 98%;
+        max-width: 99vw;
+        padding: 18px 4vw;
+        margin: 40px auto 0;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 30px;
+    }
+
+    .search input {
+        width: 100%;
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+        margin: 15px 0 0 0;
+        align-self: flex-end;
+        font-size: 16px;
+    }
+
+    .temp {
+        font-size: 38px;
+    }
+
+    .city {
+        font-size: 26px;
+    }
+
+    .details {
+        flex-direction: column;
+        padding: 0 10px;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .col {
+        justify-content: flex-start;
+        margin-bottom: 12px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        margin: 20px auto 0;
+        padding: 10px 2vw;
+    }
+
+    .temp {
+        font-size: 28px;
+    }
+
+    .city {
+        font-size: 18px;
+    }
+
+    .details {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 16px;
+    }
+}
